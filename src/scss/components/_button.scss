@@ -1,0 +1,26 @@
+button.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: calc(15px / 13px);
+  box-sizing: border-box;
+  border: 2px solid var(--color-00-1);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--primary {
+    background-color: var(--color-00-1);
+    color: var(--color-01);
+  }
+
+  &--outlined {
+    background-color: var(--color-01);
+    color: var(--color-00-1);
+  }
+}
