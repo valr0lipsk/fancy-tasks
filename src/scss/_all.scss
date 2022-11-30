@@ -24,4 +24,6 @@ body,
 
 .main {
   display: grid;
+  grid-template-columns: 0.3fr 1.5fr 1fr;
+  grid-column-gap: 66px;
 }
