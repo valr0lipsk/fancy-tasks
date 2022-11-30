@@ -1,5 +1,6 @@
 @import "./components/button";
 @import "./components/navbar";
+@import "./components/welcome";
 
 :root {
   --font-titles: "Baloo Bhai 2", cursive;
@@ -26,4 +27,10 @@ body,
   display: grid;
   grid-template-columns: 0.3fr 1.5fr 1fr;
   grid-column-gap: 66px;
+}
+
+.container {
+  width: 100%;
+  background-color: var(--color-02);
+  border-radius: 14px;
 }

@@ -1,0 +1,31 @@
+.container {
+  margin-top: 55px;
+
+  &--welcome {
+    height: 160px;
+    position: relative;
+    min-width: 510px;
+    color: var(--color-00-1);
+    padding: 31px 46px;
+    box-sizing: border-box;
+  }
+
+  svg {
+    position: absolute;
+    top: -30px;
+    right: 104px;
+  }
+}
+
+.container__title {
+  font-family: var(--font-titles);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 57px;
+  margin: 0;
+}
+
+.container__text {
+  margin: 0;
+  font-family: var(--font-main);
+}
