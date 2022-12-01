@@ -3,6 +3,7 @@ import { ReactComponent as ClockIcon } from "../assets/clock.svg";
 import { ReactComponent as CalendarIcon } from "../assets/calendar.svg";
 
 interface TaskProps {
+  id: number;
   title: string;
   category: string;
   status: string;
@@ -10,6 +11,7 @@ interface TaskProps {
 }
 
 const Task: FunctionComponent<TaskProps> = ({
+  id,
   title,
   category,
   status,

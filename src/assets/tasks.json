@@ -1,53 +1,62 @@
 [
   {
+    "id": 1,
     "title": "Buy milk",
     "category": "home",
     "status": "Done",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 2,
     "title": "Learn React",
     "category": "styding",
-    "status": "In progress",
+    "status": "To do",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 3,
     "title": "Take coffee with Artyom",
     "category": "social",
     "status": "In progress",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 4,
     "title": "Buy milk",
     "category": "home",
     "status": "Done",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 5,
     "title": "Learn React",
     "category": "styding",
     "status": "In progress",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 6,
     "title": "Take coffee with Artyom",
     "category": "social",
     "status": "In progress",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 7,
     "title": "Buy milk",
     "category": "home",
     "status": "Done",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 8,
     "title": "Learn React",
     "category": "styding",
     "status": "In progress",
     "date": "2022-11-30T14:00:46.019Z"
   },
   {
+    "id": 9,
     "title": "Take coffee with Artyom",
     "category": "social",
     "status": "In progress",
