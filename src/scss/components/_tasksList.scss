@@ -1,13 +1,30 @@
-ul {
+.list {
   width: 100%;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   overflow: auto;
-  max-height: 500px;
+  max-height: 390px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.btn--text {
+  outline: none;
+  background: none;
+  border: none;
+  font-family: var(--font-titles);
+  color: var(--color-00-1);
+  font-weight: 700;
+  opacity: 0.3;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 31px;
+
+  &.active {
+    opacity: 1;
+  }
 }
 
 .container--item {
@@ -80,6 +97,7 @@ ul {
 
   svg {
     position: static;
+    margin-right: 2px;
   }
 
   > div {
