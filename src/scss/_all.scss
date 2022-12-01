@@ -2,6 +2,7 @@
 @import "./components/navbar";
 @import "./components/welcome";
 @import "./components/status";
+@import "./components/tasksList";
 
 :root {
   --font-titles: "Baloo Bhai 2", cursive;
@@ -15,6 +16,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 html,
