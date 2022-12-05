@@ -7,6 +7,7 @@ import Welcome from "./components/Welcome";
 import * as dayjs from "dayjs";
 
 import "./scss/_all.scss";
+import Premium from "./components/Premium";
 
 dayjs.extend(require("dayjs/plugin/weekday"));
 dayjs.locale(require("dayjs/locale/ru"));
@@ -22,6 +23,7 @@ function App() {
       <div className="column">
         <Status />
         <ChartBlock />
+        <Premium />
       </div>
     </div>
   );
