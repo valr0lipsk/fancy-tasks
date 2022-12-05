@@ -4,6 +4,7 @@
 @import "./components/status";
 @import "./components/tasksList";
 @import "./components/premium";
+@import "./pages/nomatch";
 
 :root {
   --font-titles: "Baloo Bhai 2", cursive;
@@ -28,9 +29,15 @@ body,
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 0.3fr 1.5fr 1fr;
-  grid-column-gap: 66px;
+  padding: 24px 80px 22px 32px;
+  &--home {
+    display: grid;
+    grid-template-columns: 0.3fr 1.5fr 1fr;
+    grid-column-gap: 66px;
+  }
+
+  &--tasks {
+  }
 }
 
 .container {
