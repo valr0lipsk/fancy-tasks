@@ -11,11 +11,27 @@ const TasksList = () => {
     setFilter(value);
   };
 
-  useEffect(() => {
-    filter !== "All"
-      ? setTasks(tasksList.filter((e) => e.status === filter))
-      : setTasks(tasksList);
-  }, [filter]);
+  const filteredTasks = () => {
+    return filter === "All" ? tasks : tasks.filter((t) => t.status === filter);
+  };
+
+  const handleChangeStatus = (id: number) => {
+    setTasks(
+      [...tasks].map((el) => {
+        if (el.id === id) {
+          switch (el.status) {
+            case "In progress":
+              return { ...el, status: "Done" };
+            case "To do":
+              return { ...el, status: "Done" };
+            case "Done":
+              return { ...el, status: "To do" };
+          }
+        }
+        return el;
+      })
+    );
+  };
 
   return (
     <>
@@ -47,8 +63,8 @@ const TasksList = () => {
         </button>
       </div>
       <ul className="list">
-        {tasks.map((e) => (
-          <Task key={e.id} {...e} />
+        {filteredTasks().map((e) => (
+          <Task onStatusChange={handleChangeStatus} key={e.id} {...e} />
         ))}
       </ul>
     </>
