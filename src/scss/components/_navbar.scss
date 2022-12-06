@@ -8,6 +8,18 @@
   padding: 40px 52px;
   box-sizing: border-box;
   border-radius: 24px;
+  align-content: center;
+  box-shadow: 20px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  min-height: 413px;
+}
+
+.nav__button {
+  min-height: 26px;
+  min-width: 26px;
+  cursor: pointer;
+}
+
+.nav__button--bottom {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 32px;

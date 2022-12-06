@@ -8,6 +8,7 @@ interface TaskProps {
   category: string;
   status: string;
   date: string;
+  onStatusChange: (id: number) => void;
 }
 
 const Task: FunctionComponent<TaskProps> = ({
@@ -16,12 +17,17 @@ const Task: FunctionComponent<TaskProps> = ({
   category,
   status,
   date,
+  onStatusChange,
 }) => {
   const dateSting = new Date(date).toDateString();
   return (
     <li className="container container--item">
       <div className="li__checkbox">
-        <input type="checkbox" checked={status === "Done" ? true : false} />
+        <input
+          type="checkbox"
+          checked={status === "Done" ? true : false}
+          onChange={() => onStatusChange(id)}
+        />
       </div>
       <div className="li__text">
         <p className={status === "Done" ? "cross" : ""}>{title}</p>

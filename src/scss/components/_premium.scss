@@ -1,0 +1,29 @@
+.container--premium {
+  margin-top: 10px;
+  padding: 16px;
+  max-width: 440px;
+  display: flex;
+
+  .title--main {
+    margin-top: 0;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    p:last-of-type {
+      font-family: var(--font-main);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+      margin-bottom: 6px;
+    }
+  }
+
+  svg {
+    position: static;
+    margin-right: 30px;
+  }
+}

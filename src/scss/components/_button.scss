@@ -5,10 +5,13 @@ button.btn {
   font-family: var(--font-main);
   font-weight: 700;
   font-size: 13px;
-  line-height: calc(15px / 13px);
   box-sizing: border-box;
   border: 2px solid var(--color-00-1);
   cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     text-decoration: underline;
@@ -22,5 +25,10 @@ button.btn {
   &--outlined {
     background-color: var(--color-01);
     color: var(--color-00-1);
+  }
+
+  svg {
+    position: static;
+    margin-right: 10px;
   }
 }
