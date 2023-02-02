@@ -1,20 +1,21 @@
-import React from "react";
-import ChartBlock from "../components/Chart";
-import Navbar from "../components/Navbar";
-import Premium from "../components/Premium";
-import Status from "../components/Status";
-import TasksList from "../components/TasksList";
-import Welcome from "../components/Welcome";
+import {
+  ChartBlock,
+  Navbar,
+  Premium,
+  Status,
+  TasksList,
+  Welcome,
+} from "../components";
 
 const Home = () => {
   return (
     <div className="main main--home">
       <Navbar />
-      <div className="column">
+      <div>
         <Welcome userName="Josh" />
         <TasksList />
       </div>
-      <div className="column">
+      <div>
         <Status />
         <ChartBlock />
         <Premium />

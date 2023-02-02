@@ -1,0 +1,112 @@
+.column {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed rgba(28, 29, 34, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  // display: flex;
+  // flex-direction: column;
+
+  > p {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(28, 29, 34, 0.5);
+  }
+
+  .task {
+    background: var(--color-01);
+    border: 2px solid rgba(28, 29, 34, 0.06);
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 18px 20px;
+    max-height: 112px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+    .line {
+      background: rgba(28, 29, 34, 0.08);
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin: 0;
+        font-family: var(--font-titles);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+      }
+
+      span {
+        font-family: var(--font-main);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: rgba(28, 29, 34, 0.5);
+      }
+    }
+
+    .task__mark {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: max-content;
+      align-items: flex-end;
+      font-family: var(--font-main);
+      font-size: 13px;
+      font-weight: 400;
+
+      svg {
+        margin-right: 2px;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+
+    &:hover {
+      box-shadow: -6px 8px 20px rgba(28, 29, 34, 0.1);
+      transform: translate(9px, -7px);
+      transition: all 0.05s ease-in;
+
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   width: 100%;
+      //   height: 100%;
+      //   border: 2px dashed rgba(28, 29, 34, 0.08);
+      //   z-index: 0;
+      //   border-radius: 12px;
+      //   top: 7px;
+      //   left: -9px;
+      // }
+    }
+  }
+}
+
+.btn-rounded {
+  background-color: var(--color-01);
+  border: 2px solid rgba(28, 29, 34, 0.1);
+  border-radius: 50%;
+  display: flex;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

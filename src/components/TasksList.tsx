@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Task from "./Task";
+import Task from "./TaskHome";
 
 import tasksList from "../assets/tasks.json";
 

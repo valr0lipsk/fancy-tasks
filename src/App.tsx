@@ -3,7 +3,7 @@ import * as dayjs from "dayjs";
 import "./scss/_all.scss";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router";
-import Tasks from "./pages/Tasks";
+import Tasks from "./pages/Tasks/Tasks";
 import NoMatch from "./pages/NoMatch";
 
 dayjs.extend(require("dayjs/plugin/weekday"));

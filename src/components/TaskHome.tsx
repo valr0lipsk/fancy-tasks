@@ -2,7 +2,7 @@ import React, { FunctionComponent, useState } from "react";
 import { ReactComponent as ClockIcon } from "../assets/clock.svg";
 import { ReactComponent as CalendarIcon } from "../assets/calendar.svg";
 
-interface TaskProps {
+export interface TaskProps {
   id: number;
   title: string;
   category: string;
@@ -11,7 +11,7 @@ interface TaskProps {
   onStatusChange: (id: number) => void;
 }
 
-const Task: FunctionComponent<TaskProps> = ({
+const TaskHome: FunctionComponent<TaskProps> = ({
   id,
   title,
   category,
@@ -47,4 +47,4 @@ const Task: FunctionComponent<TaskProps> = ({
   );
 };
 
-export default Task;
+export default TaskHome;

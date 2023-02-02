@@ -3,18 +3,19 @@ import logo from "../assets/logo.svg";
 import { ReactComponent as HomeLogo } from "../assets/home.svg";
 import { ReactComponent as LinesLogo } from "../assets/lines.svg";
 import { ReactComponent as ExitLogo } from "../assets/exit.svg";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="nav">
       <img src={logo} alt="" className="nav__logo" />
       <div className="nav__top-icons">
-        <a className="nav__button">
+        <NavLink to="/" className="nav__button">
           <HomeLogo />
-        </a>
-        <a className="nav__button">
+        </NavLink>
+        <NavLink to="/tasks" className="nav__button">
           <LinesLogo />
-        </a>
+        </NavLink>
       </div>
       <a className="nav__button nav__button--bottom">
         <ExitLogo />
