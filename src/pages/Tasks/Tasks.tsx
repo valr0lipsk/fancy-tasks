@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { InputBlock, Navbar, TasksColumn } from "../../components";
 import tasksList from "../../assets/tasks.json";
 
